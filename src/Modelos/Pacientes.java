@@ -56,7 +56,5 @@ public class Pacientes implements Comparable<Pacientes>{
         }else{
             return 0;
         }
-    
-    
     }
 }
