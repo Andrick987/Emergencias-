@@ -48,7 +48,15 @@ public class Pacientes implements Comparable<Pacientes>{
 
     @Override
     public int compareTo(Pacientes o) {
-    return o.gravedad < this.gravedad ? 1: -1;
+    
+        if(this.getGravedad()>o.getGravedad()){
+            return 1;
+        }else if (this.getGravedad()<o.getGravedad()){
+            return -1;
+        }else{
+            return 0;
+        }
+    
     
     }
 }
